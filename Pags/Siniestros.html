@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncia Tu Siniestro</title>
+    <link rel="stylesheet" href="../css/siniestros.css">
+    <script src="https://kit.fontawesome.com/e98800e0c3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            Universal Secure
+        </div>
+
+        <div class="btn-menu"><i class="fa-solid fa-bars"></i><i class="fa-regular fa-x"></i></div>
+
+        <nav id="menu">
+            <a href="../index.html#lorem" class="link">Inicio</a>
+            <a href="../index.html#nuestrosseguros" class="link">Nuestros Seguros</a>
+            <a href="../index.html#siniestros" class="link">Siniestros y Contacto</a>
+            <a href="../index.html#preguntas" class="link">Preguntas Frecuentes</a>
+
+        </nav>
+    </header>
+    
+    <section id="lorem">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <button><a href="Cotiza ya.html">Más Información</a></button>
+    </section>
+    
+    <section id="formcontainer">
+        <center><h2><span>Denuncia tu Siniestro</span></h2> </center>     
+        <form id="form">
+                
+            <div class="formitems1">
+                <div class="texto"><h3>¿Cuándo fué?</h3>
+                    <p>Para poder verificar la infomración de tu póliza al momento del sinistro, te pedimos que indiques la fecha y hora en que ocurrió el siniestro</p></div>
+                <div class="formitems1inputs">
+                    <div class="input">
+                        <input id="fecha" type="date">
+                        <label for="fecha">Fecha</label>
+                    </div>
+                    <div class="input">
+                        <input id="hora" type="time">
+                        <label for="hora">Hora</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="formitems2">
+                <div class="texto"><h3>¿Cual fué el Siniestro?</h3>
+                    <p>Seleccioná el tipo de siniestro<p></div>
+                    <div class="container-card">
+                        <div class="card">
+                            <i class="fa-solid fa-car-burst"></i> 
+                            Destrucción Total
+                            <div class="toggle-icon">
+                                <input class="check-toggle" id="destruccion_t" type="radio" name="siniestro">
+                                <label for="destruccion_t" class="toggle-bg"></label>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-car-burst"></i>
+                            Destrucción Parcial 
+                            <div class="toggle-icon">
+                                <input class="check-toggle" id="destruccion_p" type="radio" name="siniestro">
+                                <label for="destruccion_p" class="toggle-bg"></label>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-user-injured"></i>
+                            Extensión de Resp.
+                            <div class="toggle-icon">
+                                <input class="check-toggle" id="extension" type="radio" name="siniestro">
+                                <label for="extension" class="toggle-bg"></label>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i class="fa-sharp fa-solid fa-people-robbery"></i>
+                            Robo 
+                            <div class="toggle-icon">
+                                <input class="check-toggle" id="robo" type="radio" name="siniestro">
+                                <label for="robo" class="toggle-bg"></label>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <i class="fa-sharp fa-solid fa-cloud-rain"></i>
+                            Inun. y Granizo
+                            <div class="toggle-icon">
+                                <input class="check-toggle" id="inun_granizo" type="radio" name="siniestro">
+                                <label for="inun_granizo" class="toggle-bg"></label>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-fire"></i>
+                            Incendio
+                            <div class="toggle-icon">
+                                <input class="check-toggle" id="incendio" type="radio" name="siniestro">
+                                <label class="toggle-bg" for="incendio"></label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                
+            </div>
+            <div class="boton">
+                <div class="texto"><h3>¿Cómo ocurrió?</h3>
+                    <p>Redactá el siniestro</p></div>
+                <textarea id="textareasiniestro"></textarea>
+                <button type="submit">Enviar</button>
+                <div class="error">Todos los campos son obligatorios</div>
+                </div>
+                
+                
+        </form>
+    </section>
+    <footer>
+        <h3>Seguinos en nuestras Redes Sociales!</h3>
+            <nav><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </nav>
+    </footer>
+    <script src="../Scripts/menu.js"></script>
+    <script src="../Scripts/validacion_form_siniestro.js"></script>
+</body>
+</html>

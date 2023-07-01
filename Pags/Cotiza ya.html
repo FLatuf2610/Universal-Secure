@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Seguro</title>
+    <link rel="stylesheet" href="../css/cotizaya.css">
+    <script src="https://kit.fontawesome.com/e98800e0c3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            Universal Secure
+        </div>
+
+        <div class="btn-menu"><i class="fa-solid fa-bars"></i><i class="fa-regular fa-x"></i></div>
+
+        <nav id="menu">
+            <a href="../index.html#lorem" class="link">Inicio</a>
+            <a href="../index.html#nuestrosseguros" class="link">Nuestros Seguros</a>
+            <a href="../index.html#siniestros" class="link">Siniestros y Contacto</a>
+            <a href="../index.html#preguntas" class="link">Preguntas Frecuentes</a>
+
+        </nav>
+    </header>
+
+    <section id="lorem">
+        <h2>La mejor cobertura del país a unos clicks de distancia</h2>
+        
+    </section>
+
+    <section id="formingreso">
+        <form id="formcotiza">
+            <div class="inputcontainer">
+                <center><h2>Formulario de ingreso</h2></center>
+                <div class="inputs-container">
+                    <div class="input">
+                        <input required id="nombre" type="text" >
+                        <label for="nombre">Nombre</label>
+                    </div>
+
+                    <div class="input">                      
+                        <input required id="apellido" type="text">
+                        <label for="apellido">Apellido</label>
+                    </div>
+                   
+                    <div class="input">
+                        <input required id="dni" type="text" >
+                        <label for="dni">DNI</label>
+                    </div>
+    
+    
+                    <div class="input">
+                        <input required id="correo" type="email" >
+                        <label for="correo">E-Mail</label>
+                    </div>
+    
+                    <div class="input">
+                        <input required id="telefono" type="tel" >
+                        <label for="telefono">Teléfono</label>
+                    </div>
+
+                    <div class="input">
+                        <input id="fecha" type="date">
+                        <label for="fecha">Fecha de Nacimiento</label>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <div class="containerparte2">
+                <div class="texto"><h3>Selecciona el tipo de seguro que querés contratar</h3></div>
+                <div class="container-card">
+                    <div class="card">
+                        <i class="fa-solid fa-notes-medical"></i>
+                        Vida e Invaliez
+                        <div class="icon-toggle">
+                            <input class="check-toggle" id="vida-invalidez" type="checkbox">
+                            <label for="vida-invalidez" class="toggle-bg"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <i class="fa-solid fa-car"></i>
+                        Vehículos
+                        <div class="icon-toggle">
+                            <input class="check-toggle" id="vehiculo" type="checkbox">
+                            <label for="vehiculo" class="toggle-bg"></label>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-building"></i>
+                        Inmuebles
+                        <div class="icon-toggle">
+                            <input class="check-toggle" id="inmueble" type="checkbox">
+                            <label for="inmueble" class="toggle-bg"></label>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                        Comercio y Consorcio
+                        <div class="icon-toggle">
+                            <input class="check-toggle" id="comercio" type="checkbox">
+                            <label for="comercio" class="toggle-bg"></label>
+                        </div>
+
+                    </div>
+    
+                </div>
+                <div class="boton">
+                    <button>Enviar</button>
+                </div>
+                <div class="error">Todos los campos son obligatorios</div>    
+            </div>
+            
+
+        </form>
+    </section>
+
+    <section id="gracias">
+        <center>
+            <h2>Gracias por <span>Elegirnos!</span></h2>
+        <p>Uno de nuestros productores se pondrá en contacto con usted para finalizar los trámites</p>
+        </center>
+    </section>
+
+   <footer>
+        <h3>Seguinos en nuestras Redes Sociales!</h3>
+        <nav>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </nav>
+    <footer>
+        <script src="../Scripts/menu.js"></script>
+        <script src="../Scripts/validacion_form_cotiza.js"></script>
+</body>
+</html>

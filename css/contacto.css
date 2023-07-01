@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#lorem button a{
+    text-decoration: none;
+    color: white;
+}
+
+#lorem button a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+button{
+    padding: 0.7em;
+    background-color:rgb(40, 40, 225);
+    color: white;
+    border-radius: 10px;
+    font-weight: 525;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+button:hover{
+    background-color: rgb(30, 30, 172);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(65, 65, 210);
+    height: 70px;
+    width: 100%;
+    color: white;
+    box-shadow: 15px;
+    position: fixed;
+    top: 0px;
+    
+}
+
+.banner{
+    width: 300px;
+     padding: 10px;
+     font-size: 1.7em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+
+#menu{
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    width: 100vw;
+    opacity: 0;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    pointer-events: none;
+    
+}
+
+.btn-menu{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+#menu.active{
+    pointer-events: unset;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.link{
+    color: rgb(40, 40, 225);
+    text-decoration: none;
+    margin: 0px 20px;
+    
+}
+
+.fa-regular.fa-x{
+    display: none;
+    font-size: 20px;
+}
+
+.fa-regular.fa-x.enabled{
+    display: block;
+}
+.fa-solid.fa-bars.disabled{
+    display: none;
+}
+
+
+
+
+#lorem{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../Img/loremcontacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: calc(100vh - 70px);
+    padding: .2em 1em ;
+    color: white;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formcontacto{
+    width: 95%;
+    margin: auto;
+}
+
+.container-form{
+    padding: 2em;
+}
+
+
+#formcontacto h3{
+    color: rgb(40, 40, 225);
+}
+
+.inputs-container{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    gap: 20px;  
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.inputs-container div{
+    position: relative;
+    width: 100%;
+}
+
+.inputs-container div input{
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    font-size: 0.8em;
+    outline: none;
+    padding: 8px 8px;
+    width: 100%;
+} 
+
+.inputs-container div label{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    left: 6px;
+    color: rgb(201, 201, 201);
+    transition: 0.1s;
+    padding: 0px 2px;
+}
+
+.inputs-container div input:focus,
+.inputs-container div input:valid{
+    border: 2px solid rgb(40, 40, 225);
+}
+
+.inputs-container div input:focus~label,
+.inputs-container div input:valid~label{
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(40, 40, 225);
+    transform: translatey(-16px);
+    background-color: white;
+    border-left: 1px solid rgb(40, 40, 225);
+    border-right: 1px solid rgb(40, 40, 225);
+}
+
+.textarea{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.textarea textarea{
+    border: 2px solid rgba(0,0,0,0.3);
+    outline: none;
+    margin: auto;
+    width: 75%;
+    height: 150px;
+}
+
+.textarea textarea:focus{
+    border: 2px solid rgb(40, 40, 225);
+}
+
+@media(min-width:768px){
+    .inputs-container{
+        grid-template-columns: repeat(2,auto);
+    }
+
+}
+
+@media (min-width:1024px){
+    .inputs-container{
+        width: 70%;
+        gap: 20px 40px;
+    }
+
+    .textarea textarea{
+        width: 70%;
+    }
+}
+
+.boton{
+    text-align: center;
+    width: 100%;
+
+}
+
+.boton button{
+    border-radius: 0px;
+    width: 55%;
+
+}
+
+@media (min-width:1024px){
+    .boton button{
+        width: 20%;
+    }
+}
+
+#infodecontacto{
+    padding:1em;
+    text-align: center;
+    border-top: 2px solid gray;
+    display: none;
+}
+
+#infodecontacto.showed{
+    display: block;
+}
+
+span{
+    color: rgb(40, 40, 225);
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(40, 40, 225);
+    padding: 1em 0;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav i{
+    color: white;
+    font-size: 1.5em;
+}
+
+.error{
+    background-color:red;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    display: none;
+}
+
+.error.activo{
+    display: block;
+}
+
+@media(min-width:1024px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(65, 65, 210);
+        height: 70px;
+        color: white;
+        box-shadow: 15px;
+    }
+    
+    .btn-menu{
+        display: none;
+    }
+
+    #menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        position: static;
+        transform: translateY(0);
+        background-color: rgb(65, 65, 210);
+        width: auto;
+        opacity: 1;
+        box-shadow: none;
+        pointer-events: unset;
+    }
+    .link{
+        color: white;
+        text-align: center;
+        position: relative;
+        padding-bottom: 2px;
+    }
+
+    .link::after
+    {
+        content: '';
+        transition: 0.3s;
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        transform: scale(0);
+        width: 100%;
+        height: 1.5px;
+        background-color: white;
+    }
+
+    .link:hover::after{
+        transform: scale(1);
+        background-color: white;
+        height: 2px;
+    }
+
+}
+    

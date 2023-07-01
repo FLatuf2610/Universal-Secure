@@ -1,0 +1,450 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+
+.preloader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.preloader.complete{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+h1{font-size: 2.2em;}
+
+body{
+    font-family:'Poppins', sans-serif;
+    margin:0;
+}
+
+button{
+    padding: 0.7em;
+    background-color:rgb(40, 40, 225);
+    color: white;
+    border-radius: 10px;
+    font-weight: 525;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+button:hover{
+    background-color: rgb(30, 30, 172);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(65, 65, 210);
+    height: 70px;
+    width: 100%;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    opacity: 1;
+    transition: 0.7s;
+}
+
+header.loading{
+    opacity: 0;
+}
+
+.banner{
+   width: 300px;
+    padding: 10px;
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#menu{
+    position: fixed;
+    top: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    width: 100vw;
+    opacity: 0;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    pointer-events: none;
+    
+}
+
+.btn-menu{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+
+
+.fa-regular.fa-x{
+    display: none;
+    font-size: 20px;
+}
+
+.fa-regular.fa-x.enabled{
+    display: block;
+}
+.fa-solid.fa-bars.disabled{
+    display: none;
+}
+
+#menu.active{
+    pointer-events: unset;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.banner{
+    padding: 0px 20px;
+}
+
+.link{
+    color: rgb(40, 40, 225);
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+
+
+
+
+
+
+    
+#lorem{
+    margin-top: 70px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../Img/cotizaya2.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height:calc(100vh - 70px);
+    padding: .2em 1em ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#quienessomos{
+    border-top: 1px solid gray;
+    text-align: center;
+    padding: 5em 1.7em;
+    line-height: 1.3em;
+}
+
+#quienessomos h2{
+    color: rgb(40, 40, 225);
+    
+}
+
+#nuestrosseguros{
+    border-top: 1px solid grey;
+    padding: 4em 0;
+
+}
+
+#nuestrosseguros h2{
+    text-align: center;
+}
+
+#nuestrosseguros span{
+    color: rgb(40, 40, 225);
+}
+
+#nuestrosseguros .container .carta p{
+    display: none;
+}
+
+#nuestrosseguros .container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#nuestrosseguros .container .carta{
+    color: white;
+    padding: 1em;
+    width: 50%;
+    height: 190px;;
+    border-radius: .5em;
+    margin: 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#vida{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../Img/vida.jpg);
+}
+
+#vehículos{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../Img/vehiculos.jpg);
+}
+
+#inmuebles{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../Img/inmuebles.jpg);
+}
+
+
+#comercio{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../Img/comercio.jpg);
+}
+
+#siniestros i{
+    font-size: 2.5em;
+    color: rgb(40, 40, 225);
+}
+
+#siniestros{
+    border-top: 1px solid gray;
+    padding: 4em 0;
+    background-color: rgb(235, 235, 235);
+}
+
+#siniestros .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#siniestros .container .carta{
+    margin: 1em;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: .5em;
+    width: 80%;
+}
+
+#preguntas span{
+    color: rgb(40, 40, 225);
+}
+
+
+#preguntas{
+    padding: 2em;
+    border-top: 1px solid gray;
+    
+}
+
+.accordions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.accordion .pregunta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.accordion .respuesta{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.accordion.showed .respuesta{
+    max-height:350px ;
+}
+
+.accordion  i{
+    transition: 0.4s;
+}
+
+.accordion.showed i{
+    transform: rotate(180deg);
+}
+
+@media (min-width:1024px){
+    .accordion{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(40, 40, 225);
+    padding: 1em 0;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav i{
+    color: white;
+    font-size: 1.5em;
+}
+
+@media (min-width: 1024px){
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(65, 65, 210);
+        height: 70px;
+        color: white;
+        box-shadow: 15px;
+    }
+    
+    .btn-menu{
+        display: none;
+    }
+
+
+    #menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        position: static;
+        transform: translateY(0);
+        background-color: rgb(65, 65, 210);
+        width: auto;
+        opacity: 1;
+        box-shadow: none;
+        pointer-events: unset;
+    }
+
+    .link{
+        color: white;
+        text-align: center;
+        position: relative;
+        padding-bottom: 2px;
+    }
+
+    .link::after
+    {
+        content: '';
+        transition: 0.3s;
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        transform: scale(0);
+        width: 100%;
+        height: 1.5px;
+        background-color: white;
+    }
+
+    .link:hover::after{
+        transform: scale(1);
+        background-color: white;
+        height: 2px;
+    }
+
+    
+    #nuestrosseguros .container .carta p{
+        display: block;
+    }
+
+    #nuestrosseguros .container{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #nuestrosseguros .container .carta{
+        width: 40%;
+        height: 190px;;
+    }
+
+    #siniestros .container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    #siniestros .container .carta{
+        width: 33%;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    #siniestros .container .carta button{
+        width: 50%;
+    }
+    
+
+
+
+
+}
+
+@media (min-width:1440px){
+
+    
+    #nuestrosseguros .container .carta{
+        height: 350px;;
+    }
+
+    #siniestros .container .carta{
+        height: 290px;
+    }
+
+
+
+}

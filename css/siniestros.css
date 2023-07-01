@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.check-toggle{
+    display: none;
+}
+
+.toggle-bg{
+    display: block;
+    width: 35px;
+    height: 23px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.toggle-bg::after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 4px;
+    left: 4px;
+    transition: 0.1s;
+}
+
+.check-toggle:checked~.toggle-bg{
+    background-color: rgb(40, 40, 225);
+}
+
+.check-toggle:checked~.toggle-bg::after{
+    left: 16px;
+}
+
+
+.error{
+    background-color:red;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    display: none;
+    margin:10px 0px;
+
+}
+
+.error.activo{
+    display: block;
+}
+
+#lorem button a{
+    text-decoration: none;
+    color: white;
+}
+
+#lorem button a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 2.2em;
+}
+
+
+button{
+    padding: 0.7em;
+    background-color:rgb(40, 40, 225);
+    color: white;
+    border-radius: 10px;
+    font-weight: 525;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+button:hover{
+    background-color: rgb(30, 30, 172);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(65, 65, 210);
+    height: 70px;
+    width: 100%;
+    color: white;
+    box-shadow: 15px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+.banner{
+    width: 300px;
+     padding: 10px;
+     font-size: 1.7em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+#menu{
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    width: 100vw;
+    opacity: 0;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    pointer-events: none;
+    
+}
+
+.btn-menu{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+#menu.active{
+    pointer-events: unset;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.fa-regular.fa-x{
+    display: none;
+    font-size: 20px;
+}
+
+.fa-regular.fa-x.enabled{
+    display: block;
+}
+.fa-solid.fa-bars.disabled{
+    display: none;
+}
+
+.banner{
+    padding: 0px 20px;
+}
+
+.link{
+    color: rgb(40, 40, 225);
+    text-decoration: none;
+    margin: 0px 20px;
+    
+}
+
+
+
+
+#lorem{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../Img/loremsiniestros.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    height: 50vh;
+    padding: .2em 1em ;
+    color: white;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+}
+
+.input input{
+    border: 2px solid rgb(40, 40, 225);
+    border-radius: 10px;
+    font-size: 0.8em;
+    outline: none;
+    padding: 8px 8px;
+    width: 100%;
+    
+}
+
+.input label{
+    position: absolute;
+    left: 6px;
+    top: -8px;
+    transition: 0.1s;
+    padding: 0px 2px;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(40, 40, 225);
+    background-color: white;
+    border-left: 1px solid rgb(40, 40, 225);
+    border-right: 1px solid rgb(40, 40, 225);
+}
+
+
+
+form{
+    display: grid;
+    gap: 20px;
+}
+
+#formcontainer span{
+    color:rgb(40, 40, 225) ;  
+}
+
+#formcontainer{
+    padding: 2em 0 ;
+    background-color: rgb(241, 241, 241);
+}
+
+.formitems1,.formitems2,.boton{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border-radius: 3px;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px ;
+}
+
+.boton{
+    display: grid;
+    place-items: center;
+}
+
+#formitems .texto p{
+    font-size: .85em;
+}
+
+
+.formitems1inputs{
+    display: grid;
+    width: 70%;
+    gap: 20px;
+}
+
+@media (min-width:768px){
+    .formitems1inputs{
+        display: grid;
+        width: 55%;
+    }
+}
+
+.container-card{
+    width: 90%;
+}
+
+.formitems2 .card{
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card i{
+    color: rgb(40, 40, 225);
+    font-size: 1.7em;
+}
+
+
+.boton textarea{
+    width: 85%;
+    height: 150px;
+    outline: none;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.boton button{
+    border-radius: 0px;
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(40, 40, 225);
+    padding: 1em 0;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav i{
+    color: white;
+    font-size: 1.5em;
+}
+
+@media (min-width:768px){
+    #textareasiniestro{
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 1024px){
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(65, 65, 210);
+        height: 70px;
+        color: white;
+        box-shadow: 15px;
+    }
+    
+    .btn-menu{
+        display: none;
+    }
+
+    #menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        position: static;
+        transform: translateY(0);
+        background-color: rgb(65, 65, 210);
+        width: auto;
+        opacity: 1;
+        box-shadow: none;
+        pointer-events: unset;
+    }
+
+
+    .link{
+        color: white;
+        text-align: center;
+        position: relative;
+        padding-bottom: 2px;
+    }
+
+    .link::after
+    {
+        content: '';
+        transition: 0.3s;
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        transform: scale(0);
+        width: 100%;
+        height: 1.5px;
+        background-color: white;
+    }
+
+    .link:hover::after{
+        transform: scale(1);
+        background-color: white;
+        height: 2px;
+    }
+
+    
+    
+    .formitems2 .container-card{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 10px;
+       justify-content: center;
+    }
+    .formitems2 .card{
+        height: 100px;
+        width: 30%;
+        border: 2px solid gray;
+        padding: 1em;
+    }
+
+
+    .formitems1inputs{
+        grid-template-columns: repeat(2,1fr);
+        width: 45%;
+        gap: 30px;
+    }
+
+
+    .formitems2 .card{
+        height: 125px;
+   
+    }   
+
+    #textareasiniestro{
+        width: 50%;
+        margin: 20px;
+        border: 1px solid rgba(0,0,0,0.5);
+        font-family: 'Poppins';
+        font-size: 1em;
+        padding: 10px;
+    }
+
+}
