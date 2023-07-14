@@ -74,7 +74,7 @@ header{
     box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
     transition: 0.5s;
     pointer-events: none;
-    
+    z-index:1000;
 }
 
 .btn-menu{
@@ -178,6 +178,7 @@ header{
     color: rgb(201, 201, 201);
     transition: 0.1s;
     padding: 0px 2px;
+    z-index:1;
 }
 
 .inputs-container div input:focus,
