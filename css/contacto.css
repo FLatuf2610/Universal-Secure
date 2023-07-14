@@ -224,12 +224,12 @@ header{
 
 @media (min-width:1024px){
     .inputs-container{
-        width: 70%;
+        width: 40%;
         gap: 20px 40px;
     }
 
     .textarea textarea{
-        width: 70%;
+        width: 30%;
     }
 }
 
