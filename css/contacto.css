@@ -47,7 +47,7 @@ header{
     box-shadow: 15px;
     position: fixed;
     top: 0px;
-    
+    z-index:1000;
 }
 
 .banner{
